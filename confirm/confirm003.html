@@ -1,0 +1,640 @@
+<!DOCTYPE HTML>
+<!--[if IE 7 ]><html class="ie ie7 lte7 lte8 lte9" lang="ko"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8 lte8 lte9" lang="ko"> <![endif]-->
+<!--[if IE 9 ]><html class="ie ie9 lte9 desktop" lang="ko"> <![endif]-->
+<!--[if IE 10 ]><html class="ie ie10 lte10 desktop" lang="ko"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--><html lang="ko"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=1300">
+	<title>재팬드라이브</title>
+	<link rel="stylesheet" href="http://fonts.googleapis.com/earlyaccess/notosanskr.css">
+	<link rel="stylesheet" type="text/css" href="../css/reset.css">
+	<link rel="stylesheet" type="text/css" href="../css/layout.css">
+	<link rel="stylesheet" type="text/css" href="../css/content.css">
+	<script src="../js/js-pack.min.js"></script>
+	<script src="../js/jquery-ui-1.10.3.custom.min.js"></script>
+	<script type="text/javascript" src="../js/jpdrive_ui.js"></script>
+</head>
+<body>
+<div id="wrap">
+	<div id="skipNavi">
+		<a href="#header">메인메뉴 바로가기</a>
+		<a href="#container">컨텐츠 바로가기</a>
+		<a href="#footer">하단메뉴 바로가기</a>
+	</div>
+	<header id="header">
+		<h1><a href="../index.html"><img src="../images/jpdrive_hd_logo.png" alt="타임즈렌터카 한국공식대리점 재팬드라이브"></a></h1>
+		<ul class="gnb">
+			<li><a href="../information/info001.html">이용안내</a></li>
+			<li><a href="../Vehicle/intro_Vehicle.html">차량소개</a></li>
+			<li><a href="../pointIntro/intro001.html">지점소개</a></li>
+			<li><a href="../confirm/confirm001.html">예약확인</a></li>
+		</ul>
+	</header>
+	<div class="searchWrap">
+		<div class="searchWrapInner">
+			<form name="" id="" method="">
+				<fieldset>
+					<legend>검색영역</legend>
+					<dl class="seearch-data-1">
+						<dt class="info_tit">간편예약</dt>
+						<dd>
+							<div class="selectbox">
+								<select name="infoLine01" id="" >
+									<option value="">지역선택</option>
+								</select>
+							</div>
+						</dd>
+						<dd>
+							<div class="selectbox">
+								<select name="infoLine02" id="" >
+									<option value="">지점선택</option>
+								</select>
+							</div>
+						</dd>
+					</dl>
+
+					<dl class="seearch-data-2">
+						<dt class="info_tit">픽업</dt>
+						<dd class="uForm">
+								<span class="input-form">
+									<input type="text" name="F_startDate" class="ui-datepicker-trigger hasDatepicker" id="F_startDate" readonly="" value="2017/03/22">
+									<button type="button" class="ui-datepicker-trigger"><img src="../images/ico_calendar.png" alt=""></button>
+								</span>
+							<div class="selectbox">
+								<select name="infoLine04" class="info_slc_time">
+									<option value="infoLine04">08:00</option>
+									<option value="infoLine04">08:00</option>
+									<option value="infoLine04">08:00</option>
+								</select>
+							</div>
+						</dd>
+					</dl>
+					<dl class="seearch-data-3">
+						<dt class="info_tit">반납</dt>
+						<dd class="uForm">
+								<span class="input-form">
+									<input type="text" value="2017.02.23" name="infoLine03" class="info_txt_cld">
+									<button type="button" class="ui-datepicker-trigger"><img src="../images/ico_calendar.png" alt=""></button>
+								</span>
+							<div class="selectbox">
+								<select name="infoLine04" id="" class="info_slc_time">
+									<option value="infoLine04">08:00</option>
+									<option value="infoLine04">08:00</option>
+									<option value="infoLine04">08:00</option>
+									<option value="infoLine04">08:00</option>
+								</select>
+							</div>
+						</dd>
+					</dl>
+
+					<button type="button" class="btn btn_ty2"><span>차량검색</span></button>
+				</fieldset>
+			</form>
+		</div>
+	</div>
+		<section id="container">
+			<h2 class="hidden">컨텐츠영역</h2>
+			<ul class="location">
+				<li><a href="/" class="home">홈</a></li>
+				<li><a href="#none">예약확인</a></li>
+				<li><strong>예약상세</strong></li>
+			</ul>
+			<div class="sub_detailCont">
+				<h3>예약확인</h3>
+				<div class="top_resStatus">
+					<span class="res_leftInner">
+						예약번호<span class="bar">|</span>
+						<span class="number">TB-170308</span>
+					</span>
+					<span class="res_rightInner">
+						예약상태<span class="bar">|</span>
+						<span class="text">예약완료</span>
+					</span>
+				</div>
+				<h4>예약자정보</h4>
+				<table width="100%" class="tbl_list_ty2">
+					<colgroup>
+						<col width="15%">
+						<col width="*">
+						<col width="15%">
+						<col width="*">
+					</colgroup>
+					<tbody>
+						<tr>
+							<th>성명</th>
+							<td>한글명 : 박아현  (영문명 : Park Ahyeon)</td>
+							<th class="bd_left">휴대폰</th>
+							<td>010-1234-5678</td>
+						</tr>
+						<tr>
+							<th>이메일</th>
+							<td colspan="3">
+								tourbaksa@nate.com
+								<a href="#none" class="btn_voucher" onclick="modal('layerpop')">바우처 보기 ></a>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<div class="subDesc">
+					<strong>ⓘ 꼭 알아두세요!</strong>
+					<ul>
+						<li>- 예약자와 실운전자는 달라도 무방합니다.</li>
+						<li>-<span class="color_ty1"> 일본에서 운전을 하기 위해서는 반드시 유효기간 내의 국제운전면허증 원본을 지참하셔야 합니다.</span>
+							<a href="/information/info004.html" class="btn_descGo">국제운전면허증안내 바로가기 > </a>
+						</li>
+						<li>- 운전자는 현지에서 차량 픽업 시 등록해 주시면 되며, 운전하실 분 모두 유효기간 내의 국제운전면허증을 소지하셔야 합니다.</li>
+					</ul>				
+				</div>
+				<h4>예약정보</h4>
+				<table width="100%" class="tbl_list_ty2">
+					<colgroup>
+						<col width="15%">
+						<col width="*">
+						<col width="15%">
+						<col width="*">
+					</colgroup>
+					<tbody>
+						<tr>
+							<th class="top_align">픽업정보</th>
+							<td>
+								<strong class="tb_name">오이타역 앞 지점</strong>   
+								<span class="tb_time">(2017/02/18 08:00)</span>
+								<a href="/pointIntro/intro_detail.html" class="view">지점정보 보기 ></a>
+							</td>
+							<th class="bd_left top_align">반납정보</th>
+							<td><strong class="tb_name">벳푸역 앞 지점</strong>   
+								<span class="tb_time">(2017/02/20 08:00)</span>
+								<a href="/pointIntro/intro001.html" class="view">지점정보 보기 ></a>
+							</td>
+						</tr>
+						<tr>
+							<th>차량클래스</th>
+							<td>경차 (660cc) / <strong>K Class</strong></td>
+							<th class="bd_left">이용시간</th>
+							<td>48시간</td>
+						</tr>
+						<tr>
+							<th class="top_align">출발/귀국편</th>
+							<td class="top_align">출발편 : OZ172    /    귀국편 : OZ173</td>
+							<th class="bd_left top_align">탑승인원</th>
+							<td class="top_align">
+								<ul>
+									<li>성인 (7세 이상) : 1명</li>
+									<li>소인 (4세~6세) : 1명   /   주니어카시트 1개</li>
+									<li>유아 (9개월~3세) : 1명   /   차일드카시트 1개</li>
+									<li>영아 (8개월 이하) : 1명   /   베이비카시트 1개</li>
+								</ul>
+							
+							</td>
+						</tr>
+						<tr>
+							<th>흡연여부</th>
+							<td>금연</td>
+							<th class="bd_left">내비게이션</th>
+							<td>한국어 (음성만 지원)</td>
+						</tr>
+						<tr>
+							<th>NOC 커버</th>
+							<td colspan="3">NOC 풀커버 (\16,000)</td>
+						</tr>
+					</tbody>
+				</table>
+				<div class="subDesc">
+					<strong>ⓘ 꼭 알아두세요!</strong>
+					<ul>
+						<li>-<span class="color_ty1">타임즈카 렌탈은 클래스 지정이며, 예약 완료 시 동급으로 랜덤 배정됩니다.</span>(현지 상황에 따라 안내 차량 외의 동급 차량이 배정될 수 있음)
+						</li>
+					</ul>				
+				</div>
+				<h4>결제정보</h4>
+				<dl class="rsv_TableList">
+					<dt>01  현지결제요금정보</dt>
+					<dd>
+						<table width="100%" class="tbl_list_ty4">
+							<thead>
+								<tr>
+									<th>렌트비</th>
+									<th>타지역 반납</th>
+									<th>합계</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>￥5,000</td>
+									<td>￥5,000</td>
+									<td><strong class="boldTxt">￥13,324</strong></td>
+								</tr>
+							</tbody> 
+						</table>
+					</dd>
+					<dt>02  사전결제정보</dt>
+					<dd class="tb_oneLine">
+						<table class="tbl_list_ty5">
+							<colgroup>
+								<col width="15%">
+								<col width="*">
+							</colgroup>
+							<tbody>
+								<tr>
+									<th>결제금액<br>(NOC 풀커버)</th>
+									<td><span class="price colorR">\16,000</span></td>
+								</tr>
+							</tbody> 
+						</table>
+					</dd>
+				</dl>
+				<div class="subDesc">
+					<strong>ⓘ 꼭 알아두세요!</strong>
+					<ul>
+						<li class="colorY">- 홈페이지에서는 NOC 풀커버 비용(클래스별 요금 책정)만을 사전 결제하게 됩니다. (NOC 풀커버 가입이 불가한 지점은 건당 20,000원 대행수수료 사전 결제 필요)</li>
+						<li>- 실제 차량 렌트비와 옵션비는 렌트 당일 현지에서 엔화 또는 신용카드로 결제하시면 됩니다.</li>
+						<li>- 사전결제는 신용카드로 결제 가능하며, 예약과 동시에 전액 결제해야만 예약이 완료됩니다.</li>
+						<li>- 예약이 완료되면 바우처(예약확인증)가 입력하신 메일로 전송됩니다.</li>
+						<li>- 바우처 메일을 프린트하거나 스마트폰에 캡쳐 이미지로 저장하여 현지 픽업 시 제시해 주시기 바랍니다.</li>
+						<li class="colorY">- 예약 완료 이후부터 모든 변경 및 취소 건은 취급수수료 20,000원이 발생됩니다.</li>	
+						<li class="colorY">- 예약 취소 시 최소 3일전까지 고객센터(평일 09:00~18:00 / 070-7017-5500)에 연락주시기 바랍니다.</li>	 				
+					</ul>				
+				</div>
+				<h4>결제내역</h4>
+				<table class="tbl_list_ty2">
+					<colgroup>
+						<col width="15%">
+						<col width="*">
+					</colgroup>
+					<tbody>
+						<tr>
+							<th>입금 총금액</th>
+							<td><span class="price colorR">\16,000</span></td>
+						</tr>
+					</tbody> 
+				</table>
+				<table width="100%" class="tbl_list_ty4">
+					<thead>
+						<tr>
+							<th>입금일자</th>
+							<th>구분</th>
+							<th>결제방법</th>
+							<th>입금계좌</th>
+							<th>금액</th>
+							<th>영수증</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>2017/02/21</td>
+							<td><span class="colorR">환불</span></td>
+							<td>신용카드</td>
+							<td>&nbsp;</td>
+							<td>-16,000</td>
+							<td>&nbsp;</td>
+						</tr>
+						<tr>
+							<td>2017/02/20</td>
+							<td>입금</td>
+							<td>신용카드</td>
+							<td>&nbsp;</td>
+							<td>-16,000</td>
+							<td><img src="../images/ico_voucher.png" alt=""></td>
+						</tr>
+					</tbody> 
+				</table>
+				<div class="btn_wrap">
+					<button type="button" class="btn btn_ty6">목록</button>
+				</div>
+				<div id="layerpop" class="layerpop" style="display:none;">
+					<a href="#none" class="layerPop_close"><span>닫기</span></a>
+					<div class="mailArea">
+						<table border="0" cellpadding="0" cellspacing="0" style="font-size:13px;color:#454545;border:0;margin:0 auto;">
+							<tr>
+								<td>
+									<table width="740" border="0" cellpadding="0" cellspacing="0" style="padding:0;margin:0;">
+										<tr>
+											<td width="154">
+												<img src="../images/mail_logo.gif" alt="재팬드라이브" width="154px" border="0" usemap="#logo" style="border: 0px currentColor; vertical-align: top;" />
+												 <map name="logo">
+													   <area shape="rect" coords="15,0,156,44" href="#none" target="_blank" alt="재팬드라이브 바로가기">
+												</map>
+											</td>
+											<td width="266"></td>
+											<td width="280" align="right"style="letter-spacing:0px;line-height:18px;font-size:11px;font-family:돋움;padding:10px 0 0 0;color:#aaaaaa"><strong>사업장 소재지</strong> : (04320) 서울시 용산구 한강대로 313<br /><strong>대표전화</strong> : 070-7017-5500  |  <strong>팩스</strong> : 02-6008-5717</td>
+										</tr>
+										<tr>
+											<td height="20px" colspan="3"></td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+							<tr>
+								<td width="740">
+									<table width="740" border="0" cellpadding="0" cellspacing="0" style="padding:0; margin:0;">
+										<tbody>
+											<tr>
+												<td width="740"  style="padding:0px; margin:0px;border:0;">
+													<img src="../images/tit_voucher.gif" alt="voucher" />
+												</td>
+											</tr>
+											<tr>
+												 <td style="vertical-align:top; font-family:Doctm, 돋움;border:1px solid #dcdcdc;padding:30px;font-size:13px;color:#454545;line-height:21px;text-align:left;">
+													재팬드라이브를 이용해 주셔서 감사합니다.<br />
+													해당 바우처를 프린트하거나 스마트폰에 캡쳐 이미지로 저장해 주세요.<br />
+													현지 접수 시 바우처와 함께 국제운전면허증 원본, 운전자의 여권을 제시해 주시면 됩니다.<br />
+													현지에서 실제 운전자와 다시 계약하므로 예약자와 운전자는 달라도 무방합니다.<br />
+													(단, 예약자와 운전자 이름이 다른 경우, 현지 픽업 시 예약자 이름도 확인 필요)
+												 </td>
+											</tr>
+											<tr>
+												<td height="20"></td>
+											</tr>
+											<tr>
+												<td align="center" style="">
+													<table width="740" border="0" cellpadding="0" cellspacing="0" style="border:2px solid #454545;padding:0; margin:0;">
+														<tr>
+															<td  height="25" colspan="5"></td>
+														</tr>
+														<tr>
+															<td width="29"></td>
+															<td width="185" align="left">
+																<strong style="color:#3a3a3a;font-size:14px;font-family:Doctm, 돋움;">Driver </strong><span class="bar" style="padding:0 20px 0 10px;color:#bfbfbf;">| </span><strong style="font-size:16px;color:#ff9000;font-family:Doctm, 돋움;">PARK AHYEON</strong>
+															</td>
+															<td width="140"></td>
+															<td width="277" align="right">
+																<strong style="color:#3a3a3a;font-size:14px;font-family:Doctm, 돋움;">Reservation No. </strong><span class="bar" style="padding:0 20px 0 10px;color:#bfbfbf;">| </span><strong  style="font-size:16px;color:#ff9000;font-family:Doctm, 돋움;">BAKSA-17030801</strong>
+															</td>
+															<td width="29"></td>
+														</tr>
+														<tr>
+															<td height="25" colspan="5"></td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+											<tr>
+												<td height="20"></td>
+											</tr>
+										</tbody>
+									</table>
+								</td>
+							</tr>
+							<tr>
+								<td width="740">
+									<table width="740" border="0" cellpadding="0" cellspacing="0" style="padding:0; margin:0;border-top:1px solid #949494;">
+										<tr>
+											<th style="padding:13px 0;background:#f4f4f4;color:#454545;font-size:14px;border-bottom:1px solid #e2e2e2;"><strong>Pick Up</strong></th>
+											<th style="padding:13px 0;background:#f4f4f4;color:#454545;font-size:14px;border-bottom:1px solid #e2e2e2;border-left:1px solid #e2e2e2;">Drop Off</th>
+										</tr>
+										<tr>
+											<td style="padding:13px 0;line-height:21px;color:#454545;font-size:14px;background:#fff;text-align:center;">
+												<strong>2017/02/18 08:00</strong><br />
+												Shop Name : NAHA KOKUSAI STREET<br />
+												(098-860-7272)
+											</td>
+											<td style="padding:13px 0;line-height:21px;color:#454545;font-size:14px;background:#fff;text-align:center;border-left:1px solid #e2e2e2;">
+												<strong>2017/02/20 08:00</strong><br />
+												Shop Name : NAHA KOKUSAI STREET<br />
+												(098-860-7272)									
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+							<tr>
+								<td width="740">
+									<table width="740" border="0" cellpadding="0" cellspacing="0" style="padding:0; margin:0;border-top:1px solid #949494;">
+										<tr>
+											<th style="width:175px;padding:13px 0;background:#f4f4f4;color:#454545;font-size:14px;border-bottom:1px solid #e2e2e2;"><strong>Reserved Car Class</strong></th>
+											<td style="width:194px;padding:13px 0 13px 20px;line-height:21px;color:#454545;font-size:13px;background:#fff;text-align:left;border-bottom:1px solid #e2e2e2;border-left:1px solid #e2e2e2;">S CLASS</td>
+											<th style="width:175px;padding:13px 0;background:#f4f4f4;color:#454545;font-size:14px;border-bottom:1px solid #e2e2e2;border-left:1px solid #e2e2e2;"><strong>Navigation</strong></th>
+											<td style="width:194px;padding:13px 0 13px 20px;line-height:21px;color:#454545;font-size:13px;background:#fff;text-align:left;border-bottom:1px solid #e2e2e2;border-left:1px solid #e2e2e2;">KOREAN (SOUND ONLY)</td>
+										</tr>
+										<tr>
+											<th style="width:175px;padding:13px 0;background:#f4f4f4;color:#454545;font-size:14px;border-bottom:1px solid #e2e2e2;"><strong>Smoking</strong></th>
+											<td style="width:194px;padding:13px 0 13px 20px;line-height:21px;color:#454545;font-size:13px;background:#fff;text-align:left;border-bottom:1px solid #e2e2e2;border-left:1px solid #e2e2e2;">NO</td>
+											<th style="width:175px;padding:13px 0;background:#f4f4f4;color:#454545;font-size:14px;border-bottom:1px solid #e2e2e2;border-left:1px solid #e2e2e2;"><strong>Option (Seat)</strong></th>
+											<td style="width:194px;padding:13px 0 13px 20px;line-height:21px;color:#454545;font-size:13px;background:#fff;text-align:left;border-bottom:1px solid #e2e2e2;border-left:1px solid #e2e2e2;">Junior (1) / Child (1)</td>
+										</tr>
+										<tr>
+											<th style="width:175px;padding:13px 0;background:#f4f4f4;color:#454545;font-size:14px;border-bottom:1px solid #e2e2e2;"><strong>Flight Number (IN)</strong></th>
+											<td  style="width:194px;padding:13px 0 13px 20px;line-height:21px;color:#454545;font-size:13px;background:#fff;text-align:left;border-bottom:1px solid #e2e2e2;border-left:1px solid #e2e2e2;">LJ245</td>
+											<th style="width:175px;padding:13px 0;background:#f4f4f4;color:#454545;font-size:14px;border-bottom:1px solid #e2e2e2;border-left:1px solid #e2e2e2;"><strong>Flight Number (OUT)</strong></th>
+											<td  style="width:194px;padding:13px 0 13px 20px;line-height:21px;color:#454545;font-size:13px;background:#fff;text-align:left;border-bottom:1px solid #e2e2e2;border-left:1px solid #e2e2e2;">LJ246</td>
+										</tr>
+										<tr>
+											<th style="width:175px;padding:13px 0;background:#f4f4f4;color:#454545;font-size:14px;border-bottom:1px solid #e2e2e2;"><strong>NOC 가입여부</strong></th>
+											<td  colspan="3" style="width:564px;padding:13px 0 13px 20px;line-height:21px;color:#454545;font-size:13px;background:#fff;text-align:left;border-bottom:1px solid #e2e2e2;border-left:1px solid #e2e2e2;">YES (NOC 풀커버에 정상적으로 가입되어 있습니다.)</td>
+										</tr>
+										<tr>
+											<th style="width:175px;padding:13px 0;background:#f4f4f4;color:#454545;font-size:14px;border-bottom:1px solid #e2e2e2;"><strong>Rent Car Cost</strong></th>
+											<td colspan="3" style="width:564px;padding:13px 0 13px 20px;line-height:21px;color:#454545;font-size:13px;background:#fff;text-align:left;border-bottom:1px solid #e2e2e2;border-left:1px solid #e2e2e2;">
+												<strong style="font-size:20px;color:#f43a01;font-family:Doctm, 돋움;">￥13,324</strong><br />
+												<span style="margin-top:10px;font-size:12px;color:#808080;">ⓘ 실제 차량 렌트비와 옵션비는 렌트 당일 현지에서 엔화 또는 신용카드로 결제하시면 됩니다.</span>
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+							<tr>
+								<td height="20"></td>
+							</tr>
+							<tr>
+								<td width="740">
+									<table width="740" border="0" cellpadding="0" cellspacing="0" style="padding:0; margin:0;">
+										<tr>
+											<td style="color:#808080;font-size:12px;font-family:Doctm, 돋움;line-height:21px;">
+												ⓘ 꼭 알아두세요!<br />
+													- 홈페이지에서는 NOC 풀커버 비용(클래스별 요금 책정)만을 사전 결제하게 됩니다.<br />
+													<span style="margin-left:10px;">(NOC 풀커버 가입이 불가한 지점은 건당 20,000원 대행수수료 사전 결제 필요)</span><br />
+													- 실제 차량 렌트비와 옵션비는 렌트 당일 현지에서 엔화 또는 신용카드로 결제하시면 됩니다.
+											</td>
+										</tr>
+									</table>
+								</td>
+							<tr>
+								<td height="30"></td>
+							</tr>
+							<tr>
+								<td  width="740">
+									<table width="740" border="0" cellpadding="0" cellspacing="0" style="padding:0; margin:0;border:1px solid #f43a01;">
+										<tr>
+											<td width="740" align="center" style="padding:13px 0;border-bottom:1px solid #e2e2e2;background:#f4f4f4;font-size:14px; color:#454545;font-family:Doctm, 돋움;font-weight:bold;">차량수령</td>
+										</tr>
+										<tr>
+											<td style="padding:20px;font-size:13px;color:#454545;line-height:21px;font-family:Doctm, 돋움;">
+												<span style="color:#f43a01;">- 필수준비물 : 국제운전면허증 원본 (유효기간만료 확인), 운전자 여권 원본, 바우처 (예약확인증/ 캡쳐 이미지 가능)</span><br />
+												- 각 지점별 대기순서에 의해 접수가 진행됩니다.<br />
+												- 필수준비물 제시 후, 엔화 또는 신용카드(VISA, Master, AMEX 등) 로 렌트비 결제를 완료하면 절차에 의해 수속을 진행합니다.<br />
+												- 접수가 끝나면 스탭의 안내를 받아 렌트 차량으로 이동합니다. <br />
+												- 차량의 내외관 체크(흠집 및 이상유무) 완료 후 서명해 주시기 바랍니다. (이후 발견된 흠집에 대해서는 사용자 책임이 됩니다.)
+											</td>
+										</tr>
+									
+										<tr>
+											<td width="740" align="center" style="padding:13px 0;border-top:1px solid #e2e2e2;border-bottom:1px solid #e2e2e2;background:#f4f4f4;font-size:14px; color:#454545;font-family:Doctm, 돋움;font-weight:bold;">변경/취소</td>
+										</tr>
+										<tr>
+											<td style="padding:20px;font-size:13px;color:#454545;line-height:21px;font-family:Doctm, 돋움;">
+												<span style="color:#f43a01;">- 예약 완료 이후부터 모든 변경 및 취소 건은 취급수수료 20,000원이 발생됩니다.</span><br />
+												<span style="color:#f43a01;">- 예약 취소 시 최소 3일전까지 고객센터(평일 09:00~18:00 / 070-7017-5500)에 연락주시기 바랍니다.</span> <br />
+												<span style="color:#f43a01;">- 국제운전면허증 미지참으로 인한 취소는 고객 과실로 차량금액  100%가 수수료로 부과됩니다.</span><br />
+												- 렌터카 이용 도중에 미리 반납하더라도 차액만큼 환불되지 않습니다.<br />
+												- NOC 풀커버는 1회성이며, 사고가 나지 않더라도 환급되지 않습니다.
+											</td>
+										</tr>
+										<tr>
+											<td width="740" align="center" style="padding:13px 0;border-top:1px solid #e2e2e2;border-bottom:1px solid #e2e2e2;background:#f4f4f4;font-size:14px; color:#454545;font-family:Doctm, 돋움;font-weight:bold;">사고 발생 시</td>
+										</tr>
+										<tr>
+											<td style="padding:20px;font-size:13px;color:#454545;line-height:21px;font-family:Doctm, 돋움;">
+												<span style="color:#f43a01;">※ 사고 발생 시 반드시 지점에 알려주시기 바랍니다.</span><br />
+												<strong>※ 타임즈카 렌탈 국제 고객 데스크 (한국어 대응)</strong><br />
+												<span style="padding-left:15px;">+81-50-3786-0056 (08:00~18:45)</span><br />
+												<span style="padding-left:15px;">+81-92-285-3865 (18:45~익일 08:00)</span><br />
+												<strong>※ 한국 대리점</strong><br />
+												<span style="padding-left:15px;">070-7017-5500 (평일 09:00~18:00) / 카카오톡 : 재팬드라이브 (영업시간 외 접수 시 연락 드립니다.)</span><br />
+												※ 상대 피해가 없는 경미한 사고(작은 스크래치)의 경우, 일정이 종료된 후 반납해 주시기 바랍니다.<br />
+												<span style="padding-left:15px;">(단, 보상 및 사고 처리가 필요한 사고의 경우, 반드시 경찰에 신고하여 접수를 하셔야 보험 적용을 받을 수 있습니다.)</span>
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+							<tr>
+								<td height="30"></td>
+							</tr>
+							<tr>
+								<td style="font-size:16px;font-family:Doctm, 돋움;color:#3a3a3a;font-weight:bold;">※픽업지점</td>
+							</tr>
+							<tr>
+								<td height="16"></td>
+							</tr>
+							<tr>
+								<td width="740">
+									<table width="740" border="0" cellpadding="0" cellspacing="0" style="padding:0; margin:0;border-top:2px solid #949494;">
+										<tr>
+											<td align="center" style="padding:12px 0;background:#f4f4f4;font-size:14px;color:#454545;font-family:Doctm, 돋움;border-top:2px solid 949494;border-bottom:1px solid #e2e2e2;font-weight:bold;">지점명</td>
+											<td style="padding:12px 0 12px 20px;font-size:13px;color:#454545;font-family:Doctm, 돋움;border-bottom:1px solid #e2e2e2;border-left:1px solid #e2e2e2;">오이타역 앞 지점 (大分駅前店)</td>
+										</tr>
+										<tr>
+											<td align="center" style="padding:12px 0;background:#f4f4f4;font-size:14px;color:#454545;font-family:Doctm, 돋움;border-bottom:1px solid #e2e2e2;font-weight:bold;">전화번호</td>
+											<td style="padding:12px 0 12px 20px;font-size:13px;color:#454545;font-family:Doctm, 돋움;border-bottom:1px solid #e2e2e2;border-left:1px solid #e2e2e2;">097-534-0762</td>
+										</tr>
+										<tr>
+											<td align="center" style="padding:12px 0;background:#f4f4f4;font-size:14px;color:#454545;font-family:Doctm, 돋움;border-bottom:1px solid #e2e2e2;font-weight:bold;">주소</td>
+											<td style="padding:12px 0 12px 20px;font-size:13px;color:#454545;font-family:Doctm, 돋움;border-bottom:1px solid #e2e2e2;border-left:1px solid #e2e2e2;">오이타시 가나이케마치 1-2-12</td>
+										</tr>
+										<tr>
+											<td align="center" style="padding:12px 0;background:#f4f4f4;font-size:14px;color:#454545;font-family:Doctm, 돋움;border-bottom:1px solid #e2e2e2;font-weight:bold;">오시는길</td>
+											<td style="padding:12px 0 12px 20px;font-size:13px;color:#454545;font-family:Doctm, 돋움;border-bottom:1px solid #e2e2e2;border-left:1px solid #e2e2e2;">오이타역에서 도보로 3분 거리입니다.</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+							<tr>
+								<td height="5"></td>
+							</tr>
+							<tr>
+								<td width="740">
+									<table width="740" border="0" cellpadding="0" cellspacing="0" style="padding:0; margin:0;">
+										<tr>
+											<td width="740" align="center">
+												<span style="display:block;width:740px;height:260px;"><img src="../images/mail_map.jpg" alt=""></span>
+											</td>
+										</tr>
+									</table>
+								</td>		
+							</tr>
+								<tr>
+								<td height="30"></td>
+							</tr>
+							<tr>
+								<td style="font-size:16px;font-family:Doctm, 돋움;color:#3a3a3a;font-weight:bold;">※반납지점</td>
+							</tr>
+							<tr>
+								<td height="16"></td>
+							</tr>
+							<tr>
+								<td width="740">
+									<table width="740" border="0" cellpadding="0" cellspacing="0" style="padding:0; margin:0;border-top:2px solid #949494;">
+										<tr>
+											<td align="center" style="padding:12px 0;background:#f4f4f4;font-size:14px;color:#454545;font-family:Doctm, 돋움;border-top:2px solid 949494;border-bottom:1px solid #e2e2e2;font-weight:bold;">지점명</td>
+											<td style="padding:12px 0 12px 20px;font-size:13px;color:#454545;font-family:Doctm, 돋움;border-bottom:1px solid #e2e2e2;border-left:1px solid #e2e2e2;">오이타역 앞 지점 (大分駅前店)</td>
+										</tr>
+										<tr>
+											<td align="center" style="padding:12px 0;background:#f4f4f4;font-size:14px;color:#454545;font-family:Doctm, 돋움;border-bottom:1px solid #e2e2e2;font-weight:bold;">전화번호</td>
+											<td style="padding:12px 0 12px 20px;font-size:13px;color:#454545;font-family:Doctm, 돋움;border-bottom:1px solid #e2e2e2;border-left:1px solid #e2e2e2;">097-534-0762</td>
+										</tr>
+										<tr>
+											<td align="center" style="padding:12px 0;background:#f4f4f4;font-size:14px;color:#454545;font-family:Doctm, 돋움;border-bottom:1px solid #e2e2e2;font-weight:bold;">주소</td>
+											<td style="padding:12px 0 12px 20px;font-size:13px;color:#454545;font-family:Doctm, 돋움;border-bottom:1px solid #e2e2e2;border-left:1px solid #e2e2e2;">오이타시 가나이케마치 1-2-12</td>
+										</tr>
+										<tr>
+											<td align="center" style="padding:12px 0;background:#f4f4f4;font-size:14px;color:#454545;font-family:Doctm, 돋움;border-bottom:1px solid #e2e2e2;font-weight:bold;">오시는길</td>
+											<td style="padding:12px 0 12px 20px;font-size:13px;color:#454545;font-family:Doctm, 돋움;border-bottom:1px solid #e2e2e2;border-left:1px solid #e2e2e2;">오이타역에서 도보로 3분 거리입니다.</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+							<tr>
+								<td height="5"></td>
+							</tr>
+							<tr>
+								<td width="740">
+									<table width="740" border="0" cellpadding="0" cellspacing="0" style="padding:0; margin:0;">
+										<tr>
+											<td width="740" align="center">
+												<span style="display:block;width:740px;height:260px;"><img src="../images/mail_map.jpg" alt=""></span>
+											</td>
+										</tr>
+									</table>
+								</td>		
+							</tr>
+							<tr>
+								<td height="30"></td>
+							</tr>
+							<tr>
+								<td style="line-height: 0; font-size: 0px;" width="740" align="center">
+									<a href="#none;"><img src="../images/btn_print.gif" alt=""></a>
+								</td>
+							</tr>
+							<tr>
+								<td height="30"></td>
+							</tr>
+							<tr>
+								<td width="720"style="padding:20px 20px;background:#efefef;borer-top:1px solid #e1e1e1;font-size:12px;line-height:21px;color:#808080;font-family:Doctm, 돋움;line-height:20px;letter-spacing:-1px;">	
+									· 본 메일은 정보통신망 이용촉진 및 정보보호 등에 관한 법률 시행규칙에 의거 메일 수신자의 수신동의 여부와 관계 없이 발송되는 메일입니다. <br>
+									· 본 메일은 발신전용 메일로 회신되지 않습니다. <br />
+									· 문의사항이 있으시면 여행박사 이메일 <a href="mailto:web@tourbaksa.co.kr" style="color:#454545;">web@tourbaksa.co.kr</a>로 연락 주시기 바랍니다.
+								</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+			</div>
+		</section>
+		<footer id="footer">
+			<div class="footmenuWrap">
+				<div class="innerWrap">
+					<ul>
+						<li><a href="../corp/travelConditions.html">여행약관</a></li>
+						<li><a href="../corp/termsOfService.html">서비스이용약관</a></li>
+						<li><a href="../corp/privacyStatement.html">개인정보 취급방침</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="copyright">
+				<h2><img src="../images/jpdrive_ft_logo.png" alt=""></h2>
+				<div class="copyInner">
+					<address>
+						<span>상호명 : (주)여행박사  |  대표 : 황주영  |  사업장 소재지 : (04320) 서울시 용산구 한강대로 313</span>
+						<span>사업자등록번호 : 105-87-26271  |  통신판매업신고번호 : 제2010 서울용산 00927호  |  관광사업등록증번호 : 제2010-000006호</span>
+						<span>대표전화 : 070-7017-5500  |  팩스 : 02-6008-5717  |  이메일 : japandrive@tourbaksa.co.kr  | 보증보험 : 15억원 가입</span>
+					</address>
+					<sub>COPYRIGHT(C) TIMESRENTCAR.COM ALL RIGHTS RESERVED.</sub>
+				</div>
+			</div>
+		</footer>
+	</div>
+</body>
+<>

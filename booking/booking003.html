@@ -1,0 +1,427 @@
+<!DOCTYPE HTML>
+<!--[if IE 7 ]><html class="ie ie7 lte7 lte8 lte9" lang="ko"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8 lte8 lte9" lang="ko"> <![endif]-->
+<!--[if IE 9 ]><html class="ie ie9 lte9 desktop" lang="ko"> <![endif]-->
+<!--[if IE 10 ]><html class="ie ie10 lte10 desktop" lang="ko"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--><html lang="ko"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=1300">
+	<title>재팬드라이브</title>
+	<link rel="stylesheet" href="http://fonts.googleapis.com/earlyaccess/notosanskr.css">
+	<link rel="stylesheet" type="text/css" href="../css/reset.css">
+	<link rel="stylesheet" type="text/css" href="../css/layout.css">
+	<link rel="stylesheet" type="text/css" href="../css/content.css">
+	<script src="../js/js-pack.min.js"></script>
+	<script src="../js/jquery-ui-1.10.3.custom.min.js"></script>
+	<script type="text/javascript" src="../js/jpdrive_ui.js"></script>
+</head>
+<body>
+<div id="wrap">
+	<div id="skipNavi">
+		<a href="#header">메인메뉴 바로가기</a>
+		<a href="#container">컨텐츠 바로가기</a>
+		<a href="#footer">하단메뉴 바로가기</a>
+	</div>
+	<header id="header">
+		<h1><a href="../index.html"><img src="../images/jpdrive_hd_logo.png" alt="타임즈렌터카 한국공식대리점 재팬드라이브"></a></h1>
+		<ul class="gnb">
+			<li><a href="../information/info001.html">이용안내</a></li>
+			<li><a href="../Vehicle/intro_Vehicle.html">차량소개</a></li>
+			<li><a href="../pointIntro/intro001.html">지점소개</a></li>
+			<li><a href="../confirm/confirm001.html">예약확인</a></li>
+		</ul>
+	</header>
+	<div class="searchWrap">
+		<div class="searchWrapInner">
+			<form name="" id="" method="">
+				<fieldset>
+					<legend>검색영역</legend>
+					<dl class="seearch-data-1">
+						<dt class="info_tit">간편예약</dt>
+						<dd>
+							<div class="selectbox">
+								<select name="infoLine01" id="" >
+									<option value="">지역선택</option>
+								</select>
+							</div>
+						</dd>
+						<dd>
+							<div class="selectbox">
+								<select name="infoLine02" id="" >
+									<option value="">지점선택</option>
+								</select>
+							</div>
+						</dd>
+					</dl>
+
+					<dl class="seearch-data-2">
+						<dt class="info_tit">픽업</dt>
+						<dd class="uForm">
+								<span class="input-form">
+									<input type="text" name="F_startDate" class="ui-datepicker-trigger hasDatepicker" id="F_startDate" readonly="" value="2017/03/22">
+									<button type="button" class="ui-datepicker-trigger"><img src="../images/ico_calendar.png" alt=""></button>
+								</span>
+							<div class="selectbox">
+								<select name="infoLine04" class="info_slc_time">
+									<option value="infoLine04">08:00</option>
+									<option value="infoLine04">08:00</option>
+									<option value="infoLine04">08:00</option>
+								</select>
+							</div>
+						</dd>
+					</dl>
+					<dl class="seearch-data-3">
+						<dt class="info_tit">반납</dt>
+						<dd class="uForm">
+								<span class="input-form">
+									<input type="text" value="2017.02.23" name="infoLine03" class="info_txt_cld">
+									<button type="button" class="ui-datepicker-trigger"><img src="../images/ico_calendar.png" alt=""></button>
+								</span>
+							<div class="selectbox">
+								<select name="infoLine04" id="" class="info_slc_time">
+									<option value="infoLine04">08:00</option>
+									<option value="infoLine04">08:00</option>
+									<option value="infoLine04">08:00</option>
+									<option value="infoLine04">08:00</option>
+								</select>
+							</div>
+						</dd>
+					</dl>
+
+					<button type="button" class="btn btn_ty2"><span>차량검색</span></button>
+				</fieldset>
+			</form>
+		</div>
+	</div>
+		<section id="container">
+			<h2 class="hidden">컨텐츠영역</h2>
+			<ul class="location">
+				<li><a href="/" class="home">홈</a></li>
+				<li><a href="#none">예약하기</a></li>
+				<li><strong>정보입력</strong></li>
+			</ul>
+			<div class="sub_detailCont">
+				<h3>예약하기</h3>
+				<div class="Tabstep">
+					<img src="../images/img_resTab03.gif" alt="">
+				</div>
+				<div class="h_txtWrap">
+					<h4>예약자정보</h4>
+					<div class="h_txt">※ 예약자와 실운전자는 달라도 무방합니다.</div>
+				</div>
+				<div class="tbl_twoMenu">
+					<div class="tbl_fl">
+						<table width="100%" class="tbl_list_ty2">
+							<colgroup>
+								<col width="15%" />
+								<col width="*" />
+								<col width="15%" />
+								<col width="25%" />
+							</colgroup>
+							<tbody>
+								<tr>
+									<th>성명 <sub>*</sub></th>
+									<td colspan="4">
+										<span class="inputInner">한글<input type="text" class="inputbox"></span>
+										<span class="inputInner">영문<input type="text" class="inputbox" value="성" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;"><input type="text" class="inputbox" value="이름" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;"></span>
+									</td>
+								</tr>
+								<tr>
+									<th>휴대폰 <sub>*</sub></th>
+									<td>
+										<div class="input_text_ty1">
+											<select name="" id="" style="width:70px">
+												<option value="">선택</option>
+												<option value="">010</option>
+											</select>
+											<span class="hyphen">-</span>
+											<input type="text" style="width:70px">
+											<span class="hyphen">-</span>
+											<input type="text" style="width:70px">
+										</div>
+									</td>
+									<th class="bd_left">생년월일 <sub>*</sub></th>
+									<td>
+										<div class="input_form">
+											<div class="uBox">
+												<input type="text" value="" class="uBox_txt">
+												<button type="button" class="calendar"><img src="../images/ico_calendar_grey.png" alt=""></button>
+											</div>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th class="alignT">이메일 <sub>*</sub></th>
+									<td colspan="4">
+										<div class="input_text_ty2">
+											<input type="text" class="mail_input"><span class="at">@</span>
+											<select name="" id="" style="width:113px;">
+												<option value="">선택</option>
+												<option value="">gmail.com</option>
+												<option value="">hanmail.net</option>
+											</select>
+										</div>
+										<ul class="tb_desc">
+											<li><span class="color_ty1">ⓘ 예약 완료 시 이메일로 바우처를 발송해드리오니 정확한 정보를 입력해 주세요.</span></li>
+											<li>ⓘ daum.net 또는 hanmail.net은 해당 포털 정책으로 메일 수신이 불가할 수 있습니다.</li>
+											<li>ⓘ 다른 메일 주소를 선택하시면 보다 정확하게 이메일을 수신하실 수 있습니다.</li>								
+										</ul>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="tbl_fr">
+						<table width="100%" class="tbl_list_ty3">
+							<colgroup>
+								<col width="50%" />
+								<col width="50%" />
+							</colgroup>
+							<thead>
+								<tr>
+									<th colspan="2"><strong>요금정보</strong></th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td><strong>현지결제</strong></td>
+									<td class="bgGrey"><strong>사전결제</strong></td>
+								</tr>
+								<tr>
+									<td>
+										<ul class="dep_list">
+											<li><span class="dep_name">렌트비</span><span class="dep_tax">￥5,000</span></li>
+											<li><span class="dep_name">타지역 반납</span><span class="dep_tax">￥3,000</span></li>
+										</ul>
+									</td>
+									<td class="bgGrey">
+										<ul class="dep_list">
+											<li><span class="dep_name">NOC 풀커버</span><span class="dep_tax">\16,000</span></li>
+											<li><span class="dep_name">대행수수료</span><span class="dep_tax">\20,000</span></li>
+										</ul>
+									</td>
+								</tr>
+								<tr>
+									<td><span class="total">Total  : ￥13,324</span></td>
+									<td class="bgGrey"><span class="total colorR">Total  : \16,000</span></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<h4>예약정보</h4>
+				<dl class="rsv_TableList">
+					<dt>01  대여정보확인</dt>
+					<dd>
+						<table class="tbl_list_ty2">
+							<colgroup>
+								<col width="15%" />
+								<col width="*" />
+								<col width="15%" />
+								<col width="*" />
+							</colgroup>
+							<tbody>
+								<tr>
+									<th>픽업정보</th>
+									<td><strong>오이타역 앞 지점</strong>   (2017/02/18 08:00)</td>
+									<th class="bd_left">반납정보</th>
+									<td><strong>벳푸역 앞 지점</strong>   (2017/02/20 08:00)</td>
+								</tr>
+								<tr>
+									<th>차량클래스</th>
+									<td>경차 (660cc) / <strong>K Class</strong></td>
+									<th class="bd_left">이용시간</th>
+									<td>48시간</td>
+								</tr>
+							</tbody> 
+						</table>
+					</dd>
+					<dt>02  항공정보입력</dt>
+					<dd>
+						<table class="tbl_list_ty2">
+							<colgroup>
+								<col width="15%" />
+								<col width="*" />
+							</colgroup>
+							<tbody>
+								<tr>
+									<th class="alignT">출발/귀국편 <sub>*</sub></th>
+									<td>
+										<span class="inputInner">
+											<label for="start_num">출발편</label>
+											<input type="text" id="start_num" value="oz172" class="inputbox" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;">
+										</span>
+										<span class="inputInner">
+											<label for="return_num">귀국편</label>
+											<input type="text" id="return_num" value="oz173" class="inputbox" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;">
+										</span>
+										<ul class="tb_desc">
+											<li><span class="color_ty1">ⓘ 항공정보 미입력 시 차량 준비 및 공항픽업 서비스 등에 차질이 발생합니다. 반드시 정확한 편명을 입력해 주시기 바랍니다.</span></li>
+											<li>ⓘ 피치항공 MM906편을 이용한 오키나와 도착 당일은 전 지점 렌터카 이용이 불가합니다.</li>
+											<li>ⓘ 공항픽업 서비스는 당일 항공 도착 손님만 유효합니다. (당일 도착이 아닐 경우, 해당 지점에서 직접 수령)</li>		
+										</ul>
+									</td>
+								</tr>
+							</tbody> 
+						</table>
+					</dd>
+					<dt>03  탑승정보입력</dt>
+					<dd>
+						<table class="tbl_list_ty2">
+							<colgroup>
+								<col width="15%" />
+								<col width="*" />
+							</colgroup>
+							<tbody>
+								<tr>
+									<th class="alignT">탑승인원 <sub>*</sub><span>(정원 4명)</span></th>
+									<td>
+										<div class="column">
+											<ul>
+												<li>
+													<span class="form_personnel">
+														<label for="adult_num">성인(7세이상)</label>
+														<select name="" id="adult_num" class="Person_num">
+															<option value="">1</option>
+															<option value="">2</option>
+														</select>
+													</span>
+												</li>
+												<li>
+													<span class="form_personnel">
+														<label for="Child_num01">소인 (4 ~ 6세)</label>
+														<select name="" id="Child_num01" class="Person_num">
+															<option value="">선택</option>
+															<option value="">1</option>
+															<option value="">2</option>
+														</select>
+													</span>
+													<span class="form_personnel">
+														<label for="Child_num02">유아 (9개월~3세)</label>
+														<select name="" id="Child_num02" class="Person_num">
+															<option value="">선택</option>
+															<option value="">1</option>
+															<option value="">2</option>
+														</select>
+													</span>
+													<span class="form_personnel">
+														<label for="Infant_num">영아 (8개월 이하)</label>
+														<select name="" id="Infant_num" class="Person_num">
+															<option value="">선택</option>
+															<option value="">1</option>
+															<option value="">2</option>
+														</select>
+													</span>
+												</li>
+												<li>
+													<span class="form_personnel">
+														<label for="Junior_num">주니어 카시트</label>
+														<input type="text" class="Person_num" value="0">
+													</span>
+													<span class="form_personnel">
+														<label for="child_num03">차일드 카시트</label>
+														<input type="text" class="Person_num" value="0">
+													</span>
+													<span class="form_personnel">
+														<label for="baby_num">베이비 카시트</label>
+														<input type="text" class="Person_num" value="0">
+													</span>
+												</li>
+											</ul>
+										</div>
+										<ul class="tb_desc">
+											<li>ⓘ 만 6세 이하의 어린이는 카시트 의무 장착이며, 무료로 제공됩니다.</li>
+											<li>ⓘ 카시트 가이드라인
+												<ul class="desc_dep2list">
+													<li>- 주니어 카시트 : 체중 15kg~32kg 미만, 신장 135cm 이하 / 4세~10세 미만</li>
+													<li>- 차일드 카시트 : 체중 9kg~18kg 미만, 신장 100cm 이하 / 1세~4세 미만</li>
+													<li>- 베이비 카시트 : 체중 10kg 미만, 신장 75cm 이하 / 신생아~12개월 미만</li>
+												</ul>											
+											</li>
+										</ul>
+									</td>
+								</tr>
+							</tbody> 
+						</table>
+					</dd>
+					<dt>04  옵션정보입력</dt>
+					<dd>
+						<table class="tbl_list_ty2">
+							<colgroup>
+								<col width="15%" />
+								<col width="*" />
+							</colgroup>
+							<tbody>
+								<tr>
+									<th>흡연여부</th>
+									<td>
+										<div class="text_data">금연</div>
+										<div class="text_oneLine">ⓘ 재팬드라이브의 전차량은 금연 차량입니다.</div>
+									</td>
+								</tr>
+								<tr>
+									<th>내비게이션</th>
+									<td>
+										<div class="agree_box">
+											<div>
+												<input type="radio" name="korean" id="korean_voice">
+												<label for="korean_voice">한국어(음성만 지원)</label>
+											</div>
+											<div class="last">
+												<input type="radio" name="Japanese" id="Japanese_voice">
+												<label for="Japanese_voice">일본어</label>
+											</div>
+										</div>
+										<div class="text_oneLine">ⓘ 지점별 재고유무에 따라 원하시는 언어로 제공되지 않을 수 있습니다.</div>
+									</td>
+								</tr>
+								<tr>
+									<th class="alignT">NOC 커버</th>
+									<td>
+										<div class="blockBox">
+											<div class="text_data">NOC 풀커버 (\16,000원)</div>
+											<div class="text_oneLine">ⓘ NOC 풀커버 가입이 가능한 지역은 NOC 풀커버 가입이 의무입니다.</div> <a href="../information/info001.html#tab03" class="noc_intro"  target="_blank"> NOC 풀커버 안내 바로가기 ></a>
+										</div>
+										<div class="blockBox">
+											<div class="text_data">신청불가</div>
+											<div class="text_oneLine">ⓘ NOC 풀커버 가입이 불가능한 지점입니다. 차량 픽업 시 지점 자체 보호패키지 가입을 권장합니다.</div> <a href="http://www.timescar-rental.kr/support/s_safety.html" class="noc_intro" target="_blank">상세보기 ></a>
+										</div>
+									</td>
+								</tr>
+							</tbody> 
+						</table>
+					</dd>
+				</dl>
+				<div class="btn_wrap">
+					<button type="button" class="btn btn_ty4">다음</button>
+					<button type="button" class="btn btn_ty5">취소</button>
+				</div>
+			</div>
+		</section>
+		<footer id="footer">
+			<div class="footmenuWrap">
+				<div class="innerWrap">
+					<ul>
+						<li><a href="../corp/travelConditions.html">여행약관</a></li>
+						<li><a href="../corp/termsOfService.html">서비스이용약관</a></li>
+						<li><a href="../corp/privacyStatement.html">개인정보 취급방침</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="copyright">
+				<h2><img src="../images/jpdrive_ft_logo.png" alt=""></h2>
+				<div class="copyInner">
+					<address>
+						<span>상호명 : (주)여행박사  |  대표 : 황주영  |  사업장 소재지 : (04320) 서울시 용산구 한강대로 313</span>
+						<span>사업자등록번호 : 105-87-26271  |  통신판매업신고번호 : 제2010 서울용산 00927호  |  관광사업등록증번호 : 제2010-000006호</span>
+						<span>대표전화 : 070-7017-5500  |  팩스 : 02-6008-5717  |  이메일 : japandrive@tourbaksa.co.kr  | 보증보험 : 15억원 가입</span>
+					</address>
+					<sub>COPYRIGHT(C) TIMESRENTCAR.COM ALL RIGHTS RESERVED.</sub>
+				</div>
+			</div>
+		</footer>
+	</div>
+</body>
+<>

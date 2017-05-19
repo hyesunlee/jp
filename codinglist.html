@@ -1,0 +1,815 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=1300">
+		<title>재팬드라이브 코딩리스트</title>
+		<link rel="stylesheet" href="http://fonts.googleapis.com/earlyaccess/notosanskr.css">
+		 <style Type="text/css">
+        <!--
+        html,body{margin:0;padding:0;color:#333;background:#fff;font-family:'Nanum Gothic',dotum,"돋움";font-size:12px;line-height:18px;}
+        body{margin:0 20px 20px 20px}
+        h1{padding:0;margin:10px 0 20px 0; font-size:24px;}
+        h2{clear:both;margin:20px 0 20px 0; font-size:18px;color:blue;}
+        table{width:85%;float:none;}
+        th{padding:6px 10px;color:#5c727c;;background:#f4f4f4;font-weight:bold;text-align:center;}
+        th em{display:block;font-size:11px;font-style:normal;font-weight:normal;}
+        thead th{padding:6px;color:#fff;background:#3b4d56;font-size:11px;}
+        td{padding:6px 5px 3px 5px;background:#FFF;color:#333;text-align:center;}
+        td.line{padding:2px;background:#dcdcdc;}
+        td.tl{text-align:left;}
+        td.tr{text-align:right;}
+        td.tc{text-align:left;font-size:11px;font-weight:bold;color:#504e4d;}
+        td .bar{display:block;padding-left:10px;font-size:11px;font-weight:normal;color:#0348d5;}
+        td .pop{display:inline-block;padding-left:5px;font-size:11px;font-weight:normal;color:#df3204;}
+        .top{margin-top:10px;text-align:right;}
+
+        img{border:none;}
+        a{color:#0000ff;font-weight:bold;}
+        a:link {text-decoration:none; color:#484848;}
+        a:visited {text-decoration:none; color:#484848;}
+        a:hover {text-decoration:underline; color:#484848;}
+        a:active {text-decoration:underline; color:#484848;}
+        .cl{padding:4px 10px;text-align:center;background:#FFF;}
+        .cv{padding:4px 10px;text-align:left;font-weight:bold;background:#FFF;}
+
+        /** 파일 정보박스 **/
+        #info{
+            left:85%;
+            width:200px;
+            padding:10px;
+            border:1px solid #ccc;
+            text-align:left;
+            background-color:#FFFFFF;
+        }
+        #info ul.info_class{padding:0 0 0 15px;}
+        #info ul.info_class li{margin: 0 0 5px 0; vertical-align:middle}
+        #info ul.info_class span{display:inline-block; width:70px}
+        #info a{text-decoration:none; font-weight:bold; color:#9F9C9C;}
+        #info a:hover{color:#000; text-decoration:underline; font-weight:bold;}
+        #info ul.number{padding:10px 0 0}
+        #info ul.number li{margin:4px 0; overflow:hidden; *zoom:1}
+        #info ul.number li span{display:block; float:left; width:80px}
+        #info legend{color:#222; font-size:22px; letter-spacing:-.09em}
+        hr{margin:20px 0; color:#eee}
+        #info ul.quick_links{padding:0 0 10px 15px;}
+        #info ul.quick_links li{margin:4px 0}
+        .list_txt{display:none; margin: 0 0 30px 0;}
+        .list_txt strong{font-size:14px;}
+        #ok_tot{color:#FF0000;}
+        #tot_icom{color:red;}
+        .incompletion{font-size:12px; color:red;font-weight:bold;}
+        .coding_complete{font-size:12px; color:green;font-weight:bold;}
+        .coding_modi{font-size:12px; color:blue;font-weight:bold;}
+        .no_cont{font-size:12px;color:#333; font-weight:bold;}
+        .guide{font-size:12px;color:#9c8874; font-weight:bold;}
+        .deb2{font-size:12px; color:#5c076b; font-weight:bold;}
+        .commu{font-size:12px; color:#FF6600; font-weight:bold;}
+        .none{font-size:12px; color:#000;font-weight:bold;}
+        #tot_com{color:#008000}
+        fieldset#info legend{}
+        a.modify_link{color:#fff; background-color:#777; border-radius:3px; padding:5px 10px; font-size:12px; text-decoration:none}
+        a.modify_link:hover{text-decoration:none; background-color:#444}
+
+        -->
+    </style>
+
+	</head>
+	<body>
+		<h1>재팬드라이브</h1>
+		<div id="wrap">
+			<fieldset id="info" style="position: absolute; top: 40px;">
+				<legend>[ 인트라넷 ]</legend>
+				<ul class="number">
+					<li><span>- 총 파일</span><strong id="tot_file" class="allfile"></strong></li>
+					<li><span>- 작업중</span><strong id="tot_icom">0</strong></li>
+					<li><span>- 완료 파일</span><strong id="tot_com">0</strong></li>
+				</ul>
+
+				<hr>
+
+				<ul class="info_class">
+					<li class="incompletion"><span>대기/작업중</span></li>
+					<li class="coding_modi"><span>수정완료</span></li>
+					<li class="coding_complete"><span>코딩완료</span></li>
+					<!-- <li class="no_cont">기획 협의중 no_cont</li>
+					<li class="commu">디자인 수정완료 commu</li>  -->
+				</ul>
+
+				<hr>
+
+			<!--	<ul class="quick_links">
+					<li><a href="#guide">가이드</a></li>
+					<li><a href="#main">메인</a></li>
+				</ul>-->
+			</fieldset>
+		</div>
+		<div id="list">
+			<h2>메인</h2>
+			<table width="100%" border="0" cellspacing="1" cellpadding="4" bgcolor="dcdcdc" align="left">
+				<colgroup>
+					<col width="20%" />
+					<col width="25%" />
+					<col width="60" />
+					<col width="60" />
+					<col width="100" />
+					<col width="100" />
+					<col width="*" />
+				</colgroup>
+				<thead>
+				<tr>
+					<th scope="col">페이지</th>
+					<th scope="col">보기</th>
+					<th scope="col">상태</th>
+					<th scope="col">완료일</th>
+					<th scope="col">수정일</th>
+					<th scope="col">비고</th>
+				</tr>
+				</thead>
+				<tbody>
+				<!-- 메인 -->
+				<tr>
+					<td class="tc">메인
+						<!--<ul>-->
+							<!--<li class="bar">- 미미미밈</li>-->
+							<!--<li class="bar"></li>-->
+						<!--</ul>-->
+					</td>
+					<td><a href="index.html" target="_blank">index.html</a></td>
+					<td></td>
+					<td></td>
+					<td style="color:red">04.05</td>
+					<td class="tl">
+						<span class="bar">렌터카예약 form부분 스타일 셀렉트박스 변경<br />(레이아웃 수정)</span>
+					</td>
+				</tr>
+			</table>
+		</div>
+		<div id="list">
+			<h2>이용안내</h2>
+			<table width="100%" border="0" cellspacing="1" cellpadding="4" bgcolor="dcdcdc" align="left">
+				<colgroup>
+					<col width="20%" />
+					<col width="25%" />
+					<col width="60" />
+					<col width="60" />
+					<col width="100" />
+					<col width="100" />
+					<col width="*" />
+				</colgroup>
+				<thead>
+				<tr>
+					<th scope="col">페이지</th>
+					<th scope="col">보기</th>
+					<th scope="col">상태</th>
+					<th scope="col">완료일</th>
+					<th scope="col">수정일</th>
+					<th scope="col">비고</th>
+				</tr>
+				</thead>
+				<tbody>
+				<!-- 메인 -->
+					<tr>
+						<td class="tc">렌터카 이용안내
+							<!--<ul>-->
+								<!--<li class="bar">- 미미미밈</li>-->
+								<!--<li class="bar"></li>-->
+							<!--</ul>-->
+						</td>
+						<td><a href="/information/info001.html" target="_blank">info001.html</a></td>
+						<td></td>
+						<td></td>
+						<td style="color:red"></td>
+						<td class="tl">
+							<span class="bar"></span>
+						</td>
+					</tr>
+					<tr>
+						<td class="tc">운전필수 정보
+							<!--<ul>-->
+								<!--<li class="bar">- 미미미밈</li>-->
+								<!--<li class="bar"></li>-->
+							<!--</ul>-->
+						</td>
+						<td><a href="/information/info002.html" target="_blank">info002.html</a></td>
+						<td></td>
+						<td></td>
+						<td style="color:red"></td>
+						<td class="tl">
+							<span class="bar"></span>
+						</td>
+					</tr>
+					<tr>
+						<td class="tc">차량보험 안내
+							<!--<ul>-->
+								<!--<li class="bar">- 미미미밈</li>-->
+								<!--<li class="bar"></li>-->
+							<!--</ul>-->
+						</td>
+						<td><a href="/information/info003.html" target="_blank">info003.html</a></td>
+						<td></td>
+						<td></td>
+						<td style="color:red"></td>
+						<td class="tl">
+							<span class="bar"></span>
+						</td>
+					</tr>
+					<tr>
+						<td class="tc">국제운전면허증
+							<!--<ul>-->
+								<!--<li class="bar">- 미미미밈</li>-->
+								<!--<li class="bar"></li>-->
+							<!--</ul>-->
+						</td>
+						<td><a href="/information/info004.html" target="_blank">info004.html</a></td>
+						<td></td>
+						<td></td>
+						<td style="color:red"></td>
+						<td class="tl">
+							<span class="bar"></span>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div id="list">
+			<h2>차량소개</h2>
+			<table width="100%" border="0" cellspacing="1" cellpadding="4" bgcolor="dcdcdc" align="left">
+				<colgroup>
+					<col width="20%" />
+					<col width="25%" />
+					<col width="60" />
+					<col width="60" />
+					<col width="100" />
+					<col width="100" />
+					<col width="*" />
+				</colgroup>
+				<thead>
+				<tr>
+					<th scope="col">페이지</th>
+					<th scope="col">보기</th>
+					<th scope="col">상태</th>
+					<th scope="col">완료일</th>
+					<th scope="col">수정일</th>
+					<th scope="col">비고</th>
+				</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="tc">
+							차량소개
+							<!--<ul>-->
+							<!--<li class="bar">- 미미미밈</li>-->
+							<!--<li class="bar"></li>-->
+							<!--</ul>-->
+						</td>
+						<td><a href="/Vehicle/intro_Vehicle.html" target="_blank">intro_Vehicle.html</a></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td class="tl"></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div id="list">
+			<h2>지점소개</h2>
+			<table width="100%" border="0" cellspacing="1" cellpadding="4" bgcolor="dcdcdc" align="left">
+				<colgroup>
+					<col width="20%" />
+					<col width="25%" />
+					<col width="60" />
+					<col width="60" />
+					<col width="100" />
+					<col width="100" />
+					<col width="*" />
+				</colgroup>
+				<thead>
+				<tr>
+					<th scope="col">페이지</th>
+					<th scope="col">보기</th>
+					<th scope="col">상태</th>
+					<th scope="col">완료일</th>
+					<th scope="col">수정일</th>
+					<th scope="col">비고</th>
+				</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="tc">
+							지점소개
+							<!--<ul>-->
+							<!--<li class="bar">- 미미미밈</li>-->
+							<!--<li class="bar"></li>-->
+							<!--</ul>-->
+						</td>
+						<td><a href="/pointIntro/intro001.html" target="_blank">intro001.html</a></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td class="tl"></td>
+					</tr>
+					<tr>
+						<td class="tc">
+							지점상세페이지
+							<!--<ul>-->
+							<!--<li class="bar">- 미미미밈</li>-->
+							<!--<li class="bar"></li>-->
+							<!--</ul>-->
+						</td>
+						<td><a href="/pointIntro/intro_detail.html" target="_blank">intro_detail.html</a></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td class="tl"></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div id="list">
+			<h2>예약확인</h2>
+			<table width="100%" border="0" cellspacing="1" cellpadding="4" bgcolor="dcdcdc" align="left">
+				<colgroup>
+					<col width="20%" />
+					<col width="25%" />
+					<col width="60" />
+					<col width="60" />
+					<col width="100" />
+					<col width="100" />
+					<col width="*" />
+				</colgroup>
+				<thead>
+				<tr>
+					<th scope="col">페이지</th>
+					<th scope="col">보기</th>
+					<th scope="col">상태</th>
+					<th scope="col">완료일</th>
+					<th scope="col">수정일</th>
+					<th scope="col">비고</th>
+				</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="tc">
+							예약확인
+							<!--<ul>-->
+							<!--<li class="bar">- 미미미밈</li>-->
+							<!--<li class="bar"></li>-->
+							<!--</ul>-->
+						</td>
+						<td><a href="/confirm/confirm001.html" target="_blank">confirm001.html</a></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td class="tl"></td>
+					</tr>
+					<tr>
+						<td class="tc">
+							예약내역
+							<!--<ul>-->
+							<!--<li class="bar">- 미미미밈</li>-->
+							<!--<li class="bar"></li>-->
+							<!--</ul>-->
+						</td>
+						<td><a href="/confirm/confirm002.html" target="_blank">confirm002.html</a></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td class="tl"></td>
+					</tr>
+					<tr>
+						<td class="tc">
+							예약확인
+							<!--<ul>-->
+							<!--<li class="bar">- 미미미밈</li>-->
+							<!--<li class="bar"></li>-->
+							<!--</ul>-->
+						</td>
+						<td><a href="/confirm/confirm003.html" target="_blank">confirm003.html</a></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td class="tl"></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div id="list">
+			<h2>고객센터</h2>
+			<table width="100%" border="0" cellspacing="1" cellpadding="4" bgcolor="dcdcdc" align="left">
+				<colgroup>
+					<col width="20%" />
+					<col width="25%" />
+					<col width="60" />
+					<col width="60" />
+					<col width="100" />
+					<col width="100" />
+					<col width="*" />
+				</colgroup>
+				<thead>
+				<tr>
+					<th scope="col">페이지</th>
+					<th scope="col">보기</th>
+					<th scope="col">상태</th>
+					<th scope="col">완료일</th>
+					<th scope="col">수정일</th>
+					<th scope="col">비고</th>
+				</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="tc">
+							공지사항
+							<!--<ul>-->
+							<!--<li class="bar">- 미미미밈</li>-->
+							<!--<li class="bar"></li>-->
+							<!--</ul>-->
+						</td>
+						<td><a href="/serviceCenter/cs001.html" target="_blank">cs001.html</a></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td class="tl"></td>
+					</tr>
+					<tr>
+						<td class="tc">
+							자주하는 질문
+							<!--<ul>-->
+							<!--<li class="bar">- 미미미밈</li>-->
+							<!--<li class="bar"></li>-->
+							<!--</ul>-->
+						</td>
+						<td><a href="/serviceCenter/cs002.html" target="_blank">cs002.html</a></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td class="tl"></td>
+					</tr>
+					<tr>
+						<td class="tc">
+							공지사항 상세페이지
+							<!--<ul>-->
+							<!--<li class="bar">- 미미미밈</li>-->
+							<!--<li class="bar"></li>-->
+							<!--</ul>-->
+						</td>
+						<td><a href="/serviceCenter/cs_detail.html" target="_blank">cs_detail.html</a></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td class="tl"></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div id="list">
+			<h2>차량검색</h2>
+			<table width="100%" border="0" cellspacing="1" cellpadding="4" bgcolor="dcdcdc" align="left">
+				<colgroup>
+					<col width="20%" />
+					<col width="25%" />
+					<col width="60" />
+					<col width="60" />
+					<col width="100" />
+					<col width="100" />
+					<col width="*" />
+				</colgroup>
+				<thead>
+				<tr>
+					<th scope="col">페이지</th>
+					<th scope="col">보기</th>
+					<th scope="col">상태</th>
+					<th scope="col">완료일</th>
+					<th scope="col">수정일</th>
+					<th scope="col">비고</th>
+				</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="tc">
+							예약하기(차량선택)
+							<!--<ul>-->
+							<!--<li class="bar">- 미미미밈</li>-->
+							<!--<li class="bar"></li>-->
+							<!--</ul>-->
+						</td>
+						<td><a href="/booking/booking001.html" target="_blank">booking001.html</a></td>
+						<td></td>
+						<td></td>
+						<td>04.05</td>
+						<td class="tl">렌터카예약 form부분 스타일 셀렉트박스 변경<br />(레이아웃 수정) </td>
+					</tr>
+					<tr>
+						<td class="tc">
+							예약하기(약관동의)
+							<!--<ul>-->
+							<!--<li class="bar">- 미미미밈</li>-->
+							<!--<li class="bar"></li>-->
+							<!--</ul>-->
+						</td>
+						<td><a href="/booking/booking002.html" target="_blank">booking002.html</a></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td class="tl"></td>
+					</tr>
+					<tr>
+						<td class="tc">
+							예약하기(정보입력)
+							<!--<ul>-->
+							<!--<li class="bar">- 미미미밈</li>-->
+							<!--<li class="bar"></li>-->
+							<!--</ul>-->
+						</td>
+						<td><a href="/booking/booking003.html" target="_blank">booking003.html</a></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td class="tl"></td>
+					</tr>
+					<tr>
+						<td class="tc">
+							예약하기(정보확인/결제)
+							<!--<ul>-->
+							<!--<li class="bar">- 미미미밈</li>-->
+							<!--<li class="bar"></li>-->
+							<!--</ul>-->
+						</td>
+						<td><a href="/booking/booking004.html" target="_blank">booking004.html</a></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td class="tl"></td>
+					</tr>
+					<tr>
+						<td class="tc">
+							예약하기(예약완료)
+							<!--<ul>-->
+							<!--<li class="bar">- 미미미밈</li>-->
+							<!--<li class="bar"></li>-->
+							<!--</ul>-->
+						</td>
+						<td><a href="/booking/booking005.html" target="_blank">booking005.html</a></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td class="tl"></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div id="list">
+			<h2>약관</h2>
+			<table width="100%" border="0" cellspacing="1" cellpadding="4" bgcolor="dcdcdc" align="left">
+				<colgroup>
+					<col width="20%" />
+					<col width="25%" />
+					<col width="60" />
+					<col width="60" />
+					<col width="100" />
+					<col width="100" />
+					<col width="*" />
+				</colgroup>
+				<thead>
+				<tr>
+					<th scope="col">페이지</th>
+					<th scope="col">보기</th>
+					<th scope="col">상태</th>
+					<th scope="col">완료일</th>
+					<th scope="col">수정일</th>
+					<th scope="col">비고</th>
+				</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="tc">
+							여행약관
+							<!--<ul>-->
+							<!--<li class="bar">- 미미미밈</li>-->
+							<!--<li class="bar"></li>-->
+							<!--</ul>-->
+						</td>
+						<td><a href="/corp/travelConditions.html" target="_blank">travelConditions.html</a></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td class="tl"></td>
+					</tr>
+					<tr>
+						<td class="tc">
+							서비스이용약관
+							<!--<ul>-->
+							<!--<li class="bar">- 미미미밈</li>-->
+							<!--<li class="bar"></li>-->
+							<!--</ul>-->
+						</td>
+						<td><a href="/corp/termsOfService.html" target="_blank">termsOfService.html</a></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td class="tl"></td>
+					</tr>
+					<tr>
+						<td class="tc">
+							개인정보취급방침
+							<!--<ul>-->
+							<!--<li class="bar">- 미미미밈</li>-->
+							<!--<li class="bar"></li>-->
+							<!--</ul>-->
+						</td>
+						<td><a href="/corp/privacyStatement.html" target="_blank">privacyStatement.html</a></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td class="tl"></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div id="list">
+			<h2>메일</h2>
+			<table width="100%" border="0" cellspacing="1" cellpadding="4" bgcolor="dcdcdc" align="left">
+				<colgroup>
+					<col width="20%" />
+					<col width="25%" />
+					<col width="60" />
+					<col width="60" />
+					<col width="100" />
+					<col width="100" />
+					<col width="*" />
+				</colgroup>
+				<thead>
+				<tr>
+					<th scope="col">페이지</th>
+					<th scope="col">보기</th>
+					<th scope="col">상태</th>
+					<th scope="col">완료일</th>
+					<th scope="col">수정일</th>
+					<th scope="col">비고</th>
+				</tr>
+				</thead>
+				<tbody>
+				<!-- 메인 -->
+				<tr>
+					<td class="tc">바우처
+						<!--<ul>-->
+							<!--<li class="bar">- 미미미밈</li>-->
+							<!--<li class="bar"></li>-->
+						<!--</ul>-->
+					</td>
+					<td><a href="/email/voucher.html" target="_blank">voucher.html</a></td>
+					<td></td>
+					<td></td>
+					<td style="color:red"></td>
+					<td class="tl">
+						<span class="bar"></span>
+					</td>
+				</tr>
+				<tr>
+					<td class="tc">업체용 예약통지서
+						<!--<ul>-->
+							<!--<li class="bar">- 미미미밈</li>-->
+							<!--<li class="bar"></li>-->
+						<!--</ul>-->
+					</td>
+					<td><a href="/email/mail.html" target="_blank"> mail.html</a></td>
+					<td></td>
+					<td></td>
+					<td style="color:red"></td>
+					<td class="tl">
+						<span class="bar"></span>
+					</td>
+				</tr>
+			</table>
+		</div>
+		<script type="text/javascript">
+			<!--
+			var tot_file=0;
+			var ok_file=0;
+			var tot_com=0;
+			var tot_icom=0;
+			function start(){
+				totEle();
+				tableSize();
+			}
+			function totEle(){
+				var obj = document.getElementById("list");
+				var ele = obj.getElementsByTagName("a");
+				var eleTr = obj.getElementsByTagName("tr");
+
+				for(var i=0; i<ele.length;i++){
+
+					if(ele[i].className !="no_blank"){
+						ele[i].setAttribute("target","_blank");
+					}
+
+				}
+
+				for(var i=0; i<eleTr.length;i++){
+					if(eleTr[i].className !="title"){ // tr태그에 class 네임이 title 인것은 배제하고 총파일을 알아낸다.
+						tot_file+=1;
+					}
+				}
+
+				for(var i=0; i<ele.length;i++){
+					if(ele[i].className == "coding_complete" || ele[i].className == "coding_modi" || ele[i].className == "guide"){
+						tot_com+=1;
+					}
+				}
+
+				for(var i=0; i<ele.length;i++){
+					if(ele[i].className == "incompletion"){
+						tot_icom+=1;
+					}
+				}
+
+
+				document.getElementById("tot_file").innerHTML =  tot_file;
+				document.getElementById("tot_com").innerHTML =  tot_com;
+				document.getElementById("tot_icom").innerHTML =  tot_icom;
+				//완료된 파일은 링크를 건다. id="list"영역안에있는건만
+				//document.getElementById("ok_tot").innerHTML =  obj.getElementsByTagName("a").className("coding_complete").length ;
+			}
+			function tableSize(){
+
+				var eleTable = document.getElementsByTagName("table");
+
+				for(var i=0;i<eleTable.length;i++)
+				{
+					eleTable[i].getElementsByTagName("td")[0].style.width="20%";
+					eleTable[i].getElementsByTagName("td")[1].style.width="15%";
+					eleTable[i].getElementsByTagName("td")[2].style.width="15%";
+					eleTable[i].getElementsByTagName("td")[3].style.width="20%";
+					eleTable[i].getElementsByTagName("td")[4].style.width="8%";
+				}
+			}
+
+			//퍼옴.ㅋ
+			function initMoving(target, position, topLimit, btmLimit) {
+				if (!target) return false;
+
+				try { document.execCommand("BackgroundImageCache", false, true);}
+				catch(err){}
+
+				var obj = target;
+				obj.initTop = position;
+				obj.topLimit = topLimit;
+				obj.bottomLimit = document.documentElement.scrollHeight - btmLimit;
+
+				obj.style.position = "absolute";
+				obj.top = obj.initTop;
+				obj.left = obj.initLeft;
+
+				if (typeof(window.pageYOffset) == "number") {
+					obj.getTop = function() {
+						return window.pageYOffset;
+					}
+				} else if (typeof(document.documentElement.scrollTop) == "number") {
+					obj.getTop = function() {
+						return document.documentElement.scrollTop;
+					}
+				} else {
+					obj.getTop = function() {
+						return 0;
+					}
+				}
+
+				if (self.innerHeight) {
+					obj.getHeight = function() {
+						return self.innerHeight;
+					}
+				} else if(document.documentElement.clientHeight) {
+					obj.getHeight = function() {
+						return document.documentElement.clientHeight;
+					}
+				} else {
+					obj.getHeight = function() {
+						return 500;
+					}
+				}
+
+				obj.move = setInterval(function() {
+					if (obj.initTop > 0) {
+						pos = obj.getTop() + obj.initTop;
+					} else {
+						pos = obj.getTop() + obj.getHeight() + obj.initTop;
+						//pos = obj.getTop() + obj.getHeight() / 2 - 15;
+					}
+
+					if (pos > obj.bottomLimit)
+						pos = obj.bottomLimit;
+					if (pos < obj.topLimit)
+						pos = obj.topLimit;
+
+					interval = obj.top - pos;
+					obj.top = obj.top - interval / 3;
+					obj.style.top = obj.top - 10 + "px";
+				}, 30)
+			}
+
+			//-->
+		</script>
+		<script type="text/javascript">initMoving(document.getElementById("info"), 50, 20, 800);</script>
+	</body>
+</html>

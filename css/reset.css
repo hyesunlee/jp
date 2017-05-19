@@ -1,0 +1,381 @@
+@charset "utf-8";
+/*------------------------------------*\
+    $RESET
+\*------------------------------------*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+h1, h2, h3, h4, h5, h6 {padding:0; margin:0;}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+html {
+    min-height: 100%;
+    overflow-y : scroll;
+}
+body {font-family:'Nanum Gothic','나눔고딕',"Malgun Gothic",ngwoff, ngeot, nmwoff, nmeot,'돋움',Dotum,'굴림',Gulim,Tahoma, Geneva, sans-serif,verdana;
+    height: 100%;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+em{font-style:normal;}
+strong {
+    font-weight: bold;
+}
+
+button{border:0;background:0;}
+
+sup{ vertical-align: super; margin-left:2px;  font-size:10px; }
+a {margin:0; padding:0;color:#454545;font-size:100%; vertical-align:baseline;text-decoration:none;background:transparent;}
+
+/*------------------------------------*\
+    $Normalize  normalize.css v2.1.2 | MIT License | git.io/normalize
+\*------------------------------------*/
+
+/* Correct `inline-block` display not defined in IE 8/9. */
+audio,
+canvas,
+video {
+    display: inline-block;
+}
+
+/* Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+
+audio:not([controls]) {
+    display: none;
+    height: 0;
+}
+
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+
+html {
+    -ms-text-size-adjust: 100%; /* 2 */
+    -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/**
+ * Remove default margin.
+ */
+
+body {
+    margin: 0;
+}
+
+
+/**
+ * Remove border when inside `a` element in IE 8/9.
+ */
+
+img {
+    border: 0;
+}
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+legend {
+    border: 0; /* 1 */
+    padding: 0; /* 2 */
+    text-indent:-9999px;
+}
+
+/**
+ * 1. Correct font family not being inherited in all browsers.
+ * 2. Correct font size not being inherited in all browsers.
+ * 3. Address margins set differently in Firefox 4+, Safari 5, and Chrome.
+ */
+button,
+input,
+select,
+textarea {
+    font-family: inherit; /* 1 */
+    font-size: 100%; /* 2 */
+    margin: 0; /* 3 */
+}
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+button,
+input {
+    line-height: normal;
+}
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Chrome, Safari 5+, and IE 8+.
+ * Correct `select` style inheritance in Firefox 4+ and Opera.
+ */
+button,
+select {
+    text-transform: none;
+}
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+button,
+html input[type="button"], /* 1 */
+input[type="reset"],
+input[type="submit"] {
+    -webkit-appearance: button; /* 2 */
+    cursor: pointer; /* 3 */
+}
+input, select, img { vertical-align:middle;}
+/**
+ * Re-set default cursor for disabled elements.
+ */
+button[disabled],
+html input[disabled] {
+    cursor: default;
+}
+
+/**
+ * 1. Address box sizing set to `content-box` in IE 8/9.
+ * 2. Remove excess padding in IE 8/9.
+ */
+input[type="checkbox"],
+input[type="radio"] {
+    box-sizing: border-box; /* 1 */
+    padding: 0; /* 2 */
+}
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
+ *    (include `-moz` to future-proof).
+ */
+input[type="search"] {
+    -webkit-appearance: textfield; /* 1 */
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box; /* 2 */
+    box-sizing: content-box;
+}
+
+/**
+ * Remove inner padding and search cancel button in Safari 5 and Chrome
+ * on OS X.
+ */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+/**
+ * 1. Remove default vertical scrollbar in IE 8/9.
+ * 2. Improve readability and alignment in all browsers.
+ */
+textarea {
+    overflow: auto; /* 1 */
+    vertical-align: top; /* 2 */
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+embed[type="application/lssl-plugin"], embed[type="application/kings-idefense-plugin"],object#CertManX, object#XecureWeb,object#XWCDataPlugin,embed#KSCrc2{position:absolute;height:0;width:0;}
+
+/*------------------------------------*\
+    $LINK
+\*------------------------------------*/
+a {
+    text-decoration: none;
+}
+
+a img {
+    border: none;
+    vertical-align:top;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration:none;
+}
+
+/* 테이블 캡션을 안보이게 한다. */
+table caption {
+    width: 0;
+    height: 0;
+    font-size: 0;
+    line-height: 0;
+    overflow: hidden;
+    visibility: hidden;
+    display: none; /* 이 속성을 넣었을때 리더기에서 읽히는지...*/
+}
+
+/*------------------------------------*\
+    $UTIL
+\*------------------------------------*/
+
+/* clear & clear-fix */
+.clear {
+    clear: both;
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+}
+
+.clear-fix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+.clear-fix {
+    display: inline-block;
+}
+
+html[xmlns] .clear-fix {
+    display: block;
+}
+
+* html .clear-fix {
+    height: 1%;
+}
+
+/* 접근성 (해당 요소의 텍스트를 화면에 보이지않게 한다. 리더기에서만 읽어준다.) */
+.hide-text {
+    position: absolute;
+    overflow: hidden;
+    width: 0;
+    height: 0;
+    font-size: 0;
+    line-height: 0;
+    text-indent: -9999px;
+}
+
+/* 접근성 (해당 요소자체를 화면에 보이지않게 한다. 리더기에서만 읽어준다.) */
+.hide-element {
+    display: block;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    border: 0;
+    background: none !important;
+    font-size: 0;
+    line-height: 0;
+}
+
+
+/* 백그라운드가 이미지로 된 버튼을 만들어 준다. */
+.img-btn {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: none;
+    text-indent: -9999em;
+    text-transform: capitalize;
+    background: none;
+    cursor: pointer;
+}
+
+/* 백그라운드가 이미지로 되어있지만 value속성값을 버튼 텍스트로 사용한다. */
+.txt-btn {
+    margin: 0;
+    padding: 0;
+    border: none;
+    text-transform: capitalize;
+    background: none;
+    cursor: pointer;
+}
+
+/* align */
+.tac { text-align:center !important; }
+.tal { text-align:left !important;   }
+.tar { text-align:right !important;  }
+.vam { vertical-align:middle;}
+.vm { vertical-align: middle !important;}
+.vat { vertical-align: top !important;}
+
+
+/*블럭요소 가운데 정렬  - center 요소 안에 middle을 넣어야 한다. */
+.center { display:table; margin:0 auto; text-align:center;}
+.middle {display:table-cell; vertical-align:middle;}
+
+/* background */
+.bgn{background:none !important;}
+
+/* border */
+.bon{border:none !important;}
+
+/* text */
+.txtdec {text-decoration:line-through;}
+
+/* letter-spacing */
+.ls-1 {letter-spacing: -1px;}
+.ls-1_5 {letter-spacing: -1.5px;}
+.ls-2 {letter-spacing: -2px;}
+.ls-2_2 {letter-spacing: -2.2px;}
+
+/* overflow */
+.ofv {
+    overflow: visible !important;
+}
+
+/* scroll */
+.of{overflow:auto;}
+.ofxa{overflow-x:auto;}
+.ofxs{overflow-x:scroll;}
+.ofya{overflow-y:auto;}
+.ofys{overflow-y:scroll;}
+
